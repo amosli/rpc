@@ -1,0 +1,11 @@
+D:\work\thrfitCsharp\thrfitCsharp\bin\Debug\thrfitCsharp.exe.config
+D:\work\thrfitCsharp\thrfitCsharp\bin\Debug\thrfitCsharp.exe
+D:\work\thrfitCsharp\thrfitCsharp\bin\Debug\thrfitCsharp.pdb
+D:\work\thrfitCsharp\thrfitCsharp\obj\Debug\thrfitCsharp.Properties.Resources.resources
+D:\work\thrfitCsharp\thrfitCsharp\obj\Debug\thrfitCsharp.csproj.GenerateResource.Cache
+D:\work\thrfitCsharp\thrfitCsharp\obj\Debug\thrfitCsharp.exe
+D:\work\thrfitCsharp\thrfitCsharp\obj\Debug\thrfitCsharp.pdb
+D:\work\thrfitCsharp\thrfitCsharp\obj\Debug\thrfitCsharp.Form1.resources
+D:\work\thrfitCsharp\thrfitCsharp\bin\Debug\Thrift.dll
+D:\work\thrfitCsharp\thrfitCsharp\bin\Debug\Thrift.pdb
+D:\work\thrfitCsharp\thrfitCsharp\obj\Debug\thrfitCsharp.csprojResolveAssemblyReference.cache

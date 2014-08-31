@@ -1,0 +1,10 @@
+D:\developsoft\thrift-0.9.1\thrift-0.9.1\lib\csharp\src\bin\Debug\Thrift.dll
+D:\developsoft\thrift-0.9.1\thrift-0.9.1\lib\csharp\src\bin\Debug\Thrift.pdb
+D:\developsoft\thrift-0.9.1\thrift-0.9.1\lib\csharp\src\obj\Debug\Thrift.csprojResolveAssemblyReference.cache
+D:\developsoft\thrift-0.9.1\thrift-0.9.1\lib\csharp\src\obj\Debug\Thrift.dll
+D:\developsoft\thrift-0.9.1\thrift-0.9.1\lib\csharp\src\obj\Debug\Thrift.pdb
+D:\work\thrfitCsharp\lib\src\bin\Debug\Thrift.dll
+D:\work\thrfitCsharp\lib\src\bin\Debug\Thrift.pdb
+D:\work\thrfitCsharp\lib\src\obj\Debug\Thrift.csprojResolveAssemblyReference.cache
+D:\work\thrfitCsharp\lib\src\obj\Debug\Thrift.dll
+D:\work\thrfitCsharp\lib\src\obj\Debug\Thrift.pdb
