@@ -23,7 +23,7 @@ namespace thrfitCsharp
             if (textBox1.Text != null)
             {
                 new HelloWorldServiceClient().startClient(textBox1.Text.Trim());
-                //new BlogClient().startClient();
+               
             }
         }
 
@@ -35,6 +35,11 @@ namespace thrfitCsharp
 
             Thread oThread = new Thread(new ThreadStart(new ThreadStart(new BlogServer().StartServer)));
             oThread.Start();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            new BlogClient().startClient();
         }
     }
 }

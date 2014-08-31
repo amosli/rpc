@@ -10,39 +10,56 @@ namespace thrfitCsharp
 {
     class BlogClient
     {
-
-
-
         static Dictionary<String, String> map = new Dictionary<String, String>();
         static List<Blog> blogs = new List<Blog>();
 
         public void startClient()
         {
             TTransport transport = new TSocket("localhost", 7911);
-            TProtocol protocol = new TBinaryProtocol(transport);
-            ThriftCase.Client client = new ThriftCase.Client(protocol);
-            transport.Open();
-            Console.WriteLine("Client calls .....");
-            map.Clear();
-            map.Add("blog", "http://amosli.cnblogs.com");
+            try
+            {
 
-            client.testCase1(10, 21, "3");
-            client.testCase2(map);
-            client.testCase3();
+                TProtocol protocol = new TBinaryProtocol(transport);
+                ThriftCase.Client client = new ThriftCase.Client(protocol);
+                transport.Open();
+                Console.WriteLine("csharp client open .....");
+                if (map != null)
+                {
+                    map.Clear();
+                }
+                map.Add("url", "http://amosli.cnblogs.com");
+                map.Add("username", "amosli");
 
-            Blog blog = new Blog();
-            //blog.setContent("this is blog content".getBytes()); 
-            blog.CreatedTime = DateTime.Now.Ticks;
-            blog.Id = "123456";
-            blog.IpAddress = "127.0.0.1";
-            blog.Topic = "this is blog topic";
-            blogs.Add(blog);
+                //case1
+                client.testCase1(10, 21, "3");
 
-            client.testCase4(blogs);
+                //case2
+                client.testCase2(map);
 
-            transport.Close();
+                //case3            
+                client.testCase3();
 
-            //Console.ReadKey(); 
+                Blog blog = new Blog();
+                blog.Content = Encoding.UTF8.GetBytes("this is blog content");
+                blog.CreatedTime = DateTime.Now.Ticks;
+                blog.Id = "543322";
+                blog.IpAddress = "127.0.0.1";
+                blog.Topic = "this is blog topic";
+                blogs.Add(blog);
+                //case4
+                client.testCase4(blogs);
+
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.Message);
+            }
+            finally
+            {
+                if (transport != null)
+                    transport.Close();//close
+            }
+
         }
     }
 }
