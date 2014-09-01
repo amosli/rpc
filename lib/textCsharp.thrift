@@ -1,3 +1,4 @@
+namespace java com.amos.thrift
 struct Blog {
     1: string topic 
     2: binary content 

@@ -22,9 +22,9 @@ namespace thrfitCsharp
             List<String> list = new List<String>();
             foreach (var item in num1)
             {
-                 list.Add(item.Key+" : "+item.Value);
-                 Console.WriteLine(item.Key + " : " + item.Value);
-             }
+                list.Add(item.Key + " : " + item.Value);
+                Console.WriteLine(item.Key + " : " + item.Value);
+            }
             return list;
         }
 
@@ -42,7 +42,10 @@ namespace thrfitCsharp
                 Blog blog = blogs[i];
                 Console.WriteLine("id:" + blog.Id);
                 Console.WriteLine("IpAddress:" + blog.IpAddress);
-                Console.WriteLine("Content:" + System.Text.Encoding.UTF8.GetString(blog.Content));
+                if (blog.Content != null)
+                {
+                    Console.WriteLine("Content:" + System.Text.Encoding.UTF8.GetString(blog.Content));
+                }
                 Console.WriteLine("topic:" + blog.Topic);
                 Console.WriteLine("time:" + blog.CreatedTime);
             }

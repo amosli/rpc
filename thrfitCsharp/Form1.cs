@@ -41,5 +41,12 @@ namespace thrfitCsharp
         {
             new BlogClient().startClient();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+            Thread thread = new Thread(new ThreadStart(new ThreadStart(new BlogServer().StartServer)));
+            thread.Start();
+        }
     }
 }
